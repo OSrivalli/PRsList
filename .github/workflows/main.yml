@@ -38,7 +38,7 @@ jobs:
 
         # List PRs that are merged into the base branch from the compare branch
         gh pr list \
-            --state merged \
+            --state open \
             --base $main_branch \
             --head $dev_branch \
             --json number,title,url \
